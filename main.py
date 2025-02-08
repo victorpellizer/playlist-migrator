@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import urllib.parse
 import json
+import os
 
 
 class Spotify2YtMusic:
@@ -107,7 +108,7 @@ def main():
     spotify_pl_code = spotify_pl.split("/")[-1]
     ytm_pl_code = ytm_pl.split("/")[-1]
     ytm_token = ""
-    spotify_token = "Bearer BQBTA9R0bxcibSG0YPUfswsQTCWDcIDpSvethudq-ItXfZlu0YtUGB9SGPIFmqcLHZoybMgABLbIHRSNmlKnw1BS8D6q36NtApY6WTcB3xOPulTDSD7zuwd6_tEz037-J38bNaRZHLc"
+    spotify_token = os.getenv("SPOTIFY_TOKEN")
     app = Spotify2YtMusic(
         ytm_pl_code=ytm_pl_code, ytm_token=ytm_token, spotify_pl_code=spotify_pl_code, spotify_token=spotify_token
     )
