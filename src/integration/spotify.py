@@ -52,7 +52,7 @@ class Spotify:
         try:
             songs = pl_data["data"]["playlistV2"]["content"]["items"]
         except:
-            print("Erro ao extrair músicas da playlist do Spotify")
+            print("The Spotify music extraction has failed")
             return False
 
         for song in songs:

@@ -21,3 +21,4 @@ pip install -r requirements.txt
 4. on main.py fill the variables with the url from the Spotify playlist that you want to grab songs from and the url from the YoutubeMusic playlist that you want to store your songs at
 - [ ] your_source_spotify_playlist
 - [ ] your_destination_ytm_playlist
+5. press play on main.py and watch the magic happen

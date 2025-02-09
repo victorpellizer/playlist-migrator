@@ -54,9 +54,9 @@ class YoutubeMusic:
                 },
             )
             if append_response.status_code == 200:
-                print(f"A música {song} foi adicionada com sucesso!")
+                print(f"The song {song} has been added succesfully!")
             else:
-                print(f"Erro ao adicionar a música {song}!")
+                print(f"Error on adding song {song}!")
 
 
 def get_yt_cookies() -> str:
