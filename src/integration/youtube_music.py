@@ -1,6 +1,8 @@
 import requests
 import json
-import os
+
+
+from utils.functions import get_yt_cookies
 
 
 class YoutubeMusic:
@@ -58,10 +60,3 @@ class YoutubeMusic:
             else:
                 print(f"Error on adding song {song}!")
 
-
-def get_yt_cookies() -> str:
-    cookies = f"SAPISID={os.getenv('SAPISID')};"
-    cookies += f"__Secure-1PAPISID={os.getenv('SAPISID')};"
-    cookies += f"__Secure-1PSIDTS={os.getenv('PSIDTS')};"
-    cookies += f"__Secure-1PSID={os.getenv('PSID')};"
-    return cookies
